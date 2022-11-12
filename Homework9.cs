@@ -1,10 +1,11 @@
 // // Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
 // // (НЕ ИСПОЛЬЗОВАТЬ РЕЗУЛЬТИРУЮЩУЮ ПЕРЕМЕННУЮ)
-// int resultSum(int m, int n)
+// int RecursiveSum(int m, int n)
 // {
 //     if (m == n)
-//        return n;
-//     return ((m+n)*(n-m+1)/2);
+//         return m;
+
+//     return m + RecursiveSum(m + 1, n);
 // }
 
 
@@ -13,7 +14,7 @@
 // int m = Convert.ToInt32(Console.ReadLine());
 // Console.Write("Введите 2-ое число: ");
 // int n = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine(resultSum(m, n));
+// Console.WriteLine(RecursiveSum(m, n));
 
 
 // // Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
